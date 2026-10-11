@@ -54,7 +54,7 @@ export default function MainSection() {
           We Create Moments <br />
           <span className="italic">Worth Remembering.</span>
         </h2>
-        <h1 className="font-sans text-center text-md mt-8 lg:mt-4 lg:text-2xl font-extralight text-black lg:text-white tracking-[0.3rem]">
+        <h1 className="font-sans text-center text-md mt-8 lg:mt-4 lg:text-2xl font-extralight text-second lg:text-white tracking-[0.3rem]">
           Event & Wedding Planner {information.city}
         </h1>
       </motion.div>
@@ -68,7 +68,7 @@ export default function MainSection() {
         custom={0.4}
       >
         <Link
-          className="text-md font-sans border border-black lg:border-white px-6 py-2.5 rounded-full text-black lg:text-white text-center hover:bg-white hover:text-primary transition-colors duration-300"
+          className="text-md font-sans border border-white px-6 py-2.5 rounded-full text-second lg:text-white text-center hover:bg-white hover:text-primary transition-colors duration-300"
           href="#contact"
         >
           PLAN YOUR WEDDING

@@ -32,7 +32,7 @@ const itemVariants = {
 export default function AboutUsSection() {
   return (
     <motion.section
-      className="w-full min-h-[80dvh] bg-primary flex flex-col gap-8 text-black px-4 md:px-8 pt-28 items-center"
+      className="w-full min-h-[80dvh] bg-primary flex flex-col gap-8 text-second px-4 md:px-8 pt-28 items-center"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -53,12 +53,12 @@ export default function AboutUsSection() {
           className="lg:col-span-5 relative flex justify-center items-center"
         >
           {/* Container Foto Utama */}
-          <div className="relative w-full aspect-[4/5] bg-second2/5 border border-second/30 z-10 overflow-hidden">
+          <div className="relative w-full aspect-[4/5] bg-primary/5 border border-second/30 z-10 overflow-hidden">
             <Image
               src="/assets/gallery/1.webp"
               alt="Wedding Organizer Concept"
               fill
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="object-cover  hover:scale-105 transition-all duration-700"
             />
           </div>
 
@@ -73,13 +73,13 @@ export default function AboutUsSection() {
         >
           {/* Judul & Headline */}
           <div className="flex flex-col gap-4">
-            <h2 className="font-serif text-3xl md:text-5xl text-black font-normal leading-tight">
+            <h2 className="font-serif text-3xl md:text-5xl text-second font-normal leading-tight">
               Crafting Bespoke Celebrations with Seamless Precision
             </h2>
           </div>
 
           {/* Paragraf Utama (Wedding Organizer Copy) */}
-          <div className="flex flex-col gap-8 font-sans text-lg text-black/80 leading-relaxed">
+          <div className="flex flex-col gap-8 font-sans text-lg text-second/80 leading-relaxed">
             <p>
               We believe a wedding is more than just an event—it is the art of
               orchestrating genuine emotions, subtle details, and unscripted

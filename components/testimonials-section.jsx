@@ -52,7 +52,7 @@ export default function TestimonialSection() {
 
   return (
     <motion.section
-      className="w-full bg-primary text-second2 px-4 md:px-8 pt-28 flex flex-col gap-8"
+      className="w-full bg-primary text-primary px-4 md:px-8 pt-28 flex flex-col gap-8"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -72,24 +72,24 @@ export default function TestimonialSection() {
           <motion.div
             key={index}
             variants={itemVariants}
-            className="relative group bg-second border border-second2/10 p-4 md:p-8 lg:p-12 flex flex-col justify-between gap-8 transition-colors duration-500 hover:border-second/50 overflow-hidden"
+            className="relative group bg-second border border-primary/10 p-4 md:p-8 lg:p-12 flex flex-col justify-between gap-8 transition-colors duration-500 hover:border-second/50 overflow-hidden"
           >
             {/* KUTIPAN & TEKS UTAMA */}
             <div className="flex flex-col gap-6">
-              <span className="font-serif text-6xl text-second2 font-normal leading-none">
+              <span className="font-serif text-6xl text-primary font-normal leading-none">
                 “
               </span>
-              <p className="font-sans text-base text-second2/80 leading-relaxed">
+              <p className="font-sans text-base text-primary/80 leading-relaxed">
                 {item.quote}
               </p>
             </div>
 
             {/* DETAIL PASANGAN & VENUE */}
-            <div className="flex flex-col gap-2 pt-6 border-t border-second2/10">
-              <h3 className="font-serif text-xl text-second2 font-normal tracking-wide">
+            <div className="flex flex-col gap-2 pt-6 border-t border-primary/10">
+              <h3 className="font-serif text-xl text-primary font-normal tracking-wide">
                 {item.couple}
               </h3>
-              <span className="font-sans text-xs uppercase tracking-[0.2em] text-second2">
+              <span className="font-sans text-xs uppercase tracking-[0.2em] text-primary">
                 {item.venue}
               </span>
             </div>

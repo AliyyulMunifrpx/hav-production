@@ -32,18 +32,18 @@ function Card({ name, value }) {
   return (
     <motion.div
       variants={cardVariants}
-      className="relative group w-full bg-second border border-second2/10 p-8 lg:p-16 flex flex-col justify-center items-center gap-2 transition-colors duration-500 hover:border-second/50 overflow-hidden"
+      className="relative group w-full bg-second border border-primary/10 p-8 lg:p-16 flex flex-col justify-center items-center gap-2 transition-colors duration-500 hover:border-second/50 overflow-hidden"
     >
       {/* Accent Line Emas yang Memanjang saat Di-hover */}
       <div className="absolute top-0 left-0 w-0 h-[2px] bg-second transition-all duration-500 group-hover:w-full" />
 
       {/* Angka dengan Serif Font Elegan */}
-      <p className="font-serif text-4xl lg:text-5xl font-normal text-second2 text-center leading-none">
+      <p className="font-serif text-4xl lg:text-5xl font-normal text-primary text-center leading-none">
         {value}
       </p>
 
       {/* Label dengan Letter Spacing Wide */}
-      <p className="font-sans text-xs uppercase tracking-[0.2em] text-second2/70 text-center">
+      <p className="font-sans text-xs uppercase tracking-[0.2em] text-primary/70 text-center">
         {name}
       </p>
     </motion.div>
@@ -59,7 +59,7 @@ export default function SocialProofSection() {
   ];
 
   return (
-    <section className="w-full bg-primary text-second2 p-4">
+    <section className="w-full bg-primary text-primary p-4">
       {/* whileInView dipasang di container utama agar 100% stabil */}
       <motion.div
         className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4"

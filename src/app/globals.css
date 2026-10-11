@@ -3,9 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #ffffff;
-  --second: #b43493;
-  --second2: #ffffff;
+  --primary: #101010;
+  --second: #ffffff;
 }
 
 @theme inline {
@@ -13,7 +12,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-second: var(--second);
-  --color-second2: var(--second2);
+  --color-primary: var(--primary);
 
   /* Poppins menjadi font-sans */
   --font-sans: var(--font-poppins);

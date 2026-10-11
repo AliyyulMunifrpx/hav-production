@@ -30,10 +30,10 @@ export default function Footer() {
         {/* CTA & BACK TO TOP */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <Link
-            href='#contact'
+            href="#contact"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-second text-black whitespace-nowrap font-sans text-xs uppercase tracking-[0.2em] font-bold rounded-full hover:bg-white transition-colors duration-300"
+            className="px-8 py-4 bg-second text-primary whitespace-nowrap font-sans text-xs uppercase tracking-[0.2em] font-bold rounded-full hover:bg-second/60 transition-colors duration-300"
           >
             Book Consultation
           </Link>

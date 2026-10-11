@@ -84,7 +84,7 @@ export default function ServicesSection() {
 
   return (
     <motion.section
-      className="w-full bg-primary text-second2 px-4 md:px-8 pt-28 flex flex-col gap-8"
+      className="w-full bg-primary text-primary px-4 md:px-8 pt-28 flex flex-col gap-8"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -104,7 +104,7 @@ export default function ServicesSection() {
           <motion.div
             key={item.number}
             variants={itemVariants}
-            className="relative group bg-second border border-second2/10 p-4 md:p-8 flex flex-col gap-8 transition-colors duration-500 hover:border-second/50 overflow-hidden"
+            className="relative group bg-second border border-primary/10 p-4 md:p-8 flex flex-col gap-8 transition-colors duration-500 hover:border-second/50 overflow-hidden"
           >
             {/* BINGKAI FOTO EDITORIAL */}
             <div className="relative w-full aspect-[2/1] bg-second  overflow-hidden">
@@ -113,35 +113,35 @@ export default function ServicesSection() {
                 alt={item.title}
                 width={1050}
                 height={750}
-                className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                className="object-cover  group-hover:scale-105 transition-all duration-700"
               />
             </div>
 
             <div className="flex flex-col gap-4">
               {/* NOMOR URUT SERIF */}
-              <span className="font-serif text-xl lg:text-2xl text-second2">
+              <span className="font-serif text-xl lg:text-2xl text-primary">
                 {item.number}
               </span>
 
               {/* JUDUL LAYANAN */}
-              <h3 className="font-serif text-xl lg:text-2xl text-second2 font-normal tracking-wide">
+              <h3 className="font-serif text-xl lg:text-2xl text-primary font-normal tracking-wide">
                 {item.title}
               </h3>
 
               {/* DESKRIPSI UTAMA */}
-              <p className="font-sans text-sm lg:text-base text-second2/70 leading-relaxed">
+              <p className="font-sans text-sm lg:text-base text-primary/70 leading-relaxed">
                 {item.description}
               </p>
             </div>
 
             {/* GARIS PEMBATAS TIPIS */}
-            <div className="w-full h-[1px] bg-second2/10" />
+            <div className="w-full h-[1px] bg-primary/10" />
 
             {/* DAFTAR DETAIL LAYANAN */}
-            <ul className="flex flex-col gap-4 font-sans text-xs lg:text-sm text-second2/80">
+            <ul className="flex flex-col gap-4 font-sans text-xs lg:text-sm text-primary/80">
               {item.details.map((detail, idx) => (
                 <li key={idx} className="flex items-start gap-4">
-                  <span className="text-second2 mt-1 text-xs">✦</span>
+                  <span className="text-primary mt-1 text-xs">✦</span>
                   <span className="leading-relaxed">{detail}</span>
                 </li>
               ))}

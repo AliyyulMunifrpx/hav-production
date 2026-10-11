@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-primary font-sans font-extralight text-black px-4 lg:px-16 xl:gap-32 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-primary font-sans font-extralight text-second px-4 lg:px-16 xl:gap-32 py-4">
       {" "}
       <div className="w-full flex items-center justify-between">
         {/* === TAMPILAN DESKTOP (TIDAK DIUBAH) === */}
